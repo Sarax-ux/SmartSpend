@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartSpend - Expenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-mark">$</span>
+        SmartSpend
+    </div>
+
+    <nav>
+        <a class="" href="index.html">Home</a>
+        <a class="active" href="expenses.html">Expenses</a>
+        <a class="" href="reports.html">Reports</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>My Expenses</h1>
+    <p>Add your daily expenses and keep track of them.</p>
+</section>
+
+<main class="container">
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-top"><p>Total Spent</p><span class="card-icon">−</span></div>
+            <h2 id="totalSpent">0 EGP</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-top"><p>Expenses</p><span class="card-icon">#</span></div>
+            <h2 id="expenseCount">0</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-top"><p>Remaining</p><span class="card-icon">✓</span></div>
+            <h2 id="expenseRemaining">0 EGP</h2>
+        </div>
+    </div>
+
+    <section class="form-box">
+        <h2>Add New Expense</h2>
+
+        <form id="expenseForm">
+
+            <label>Expense Name</label>
+            <input type="text" id="expenseName" placeholder="Example: Lunch">
+
+            <label>Amount</label>
+            <input type="number" id="expenseAmount" placeholder="Example: 100">
+
+            <label>Category</label>
+            <select id="expenseCategory">
+                <option value="">Choose Category</option>
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Shopping</option>
+                <option>Bills</option>
+                <option>Education</option>
+                <option>Entertainment</option>
+                <option>Other</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" id="expenseDate">
+
+            <button class="btn" type="submit">Add Expense</button>
+        </form>
+    </section>
+
+    <section class="form-box">
+        <div class="list-head">
+            <h2>Recent Expenses</h2>
+            <input type="text" id="searchExpense" placeholder="Search...">
+        </div>
+
+        <div id="expenseList"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 SmartSpend</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartSpend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-mark">$</span>
+        SmartSpend
+    </div>
+
+    <nav>
+        <a class="active" href="index.html">Home</a>
+        <a class="" href="expenses.html">Expenses</a>
+        <a class="" href="reports.html">Reports</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="small-title">Simple money tracking</div>
+        <h1>Spend Smart.<br><span>Live Better.</span></h1>
+        <p>Manage your money easily and know where your money goes.</p>
+        <div class="hero-actions">
+            <a href="expenses.html" class="btn">Add Expense</a>
+            <a href="reports.html" class="btn btn-light">View Reports</a>
+        </div>
+    </div>
+
+    <div class="hero-box">
+        <p>Your money at a glance</p>
+        <h2 id="homeRemaining">0 EGP</h2>
+        <span>Remaining Balance</span>
+    </div>
+</section>
+
+<main class="container">
+
+    <h2 class="section-title">My Money</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-top"><p>Income</p><span class="card-icon">↑</span></div>
+            <h2 id="homeIncome">0 EGP</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-top"><p>Total Spent</p><span class="card-icon">−</span></div>
+            <h2 id="homeSpent">0 EGP</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-top"><p>Remaining</p><span class="card-icon">✓</span></div>
+            <h2 id="homeBalance">0 EGP</h2>
+        </div>
+    </div>
+
+    <div class="income-box">
+        <h2>Set Your Income</h2>
+        <p>Enter your monthly income to calculate your remaining balance.</p>
+
+        <div class="input-row">
+            <input type="number" id="incomeInput" placeholder="Income in EGP">
+            <button class="btn" id="saveIncome">Save Income</button>
+        </div>
+    </div>
+
+    <section class="about">
+        <h2>Why SmartSpend?</h2>
+
+        <div class="about-grid">
+            <article>
+                <h3>Track</h3>
+                <p>Keep your daily expenses organized in one place.</p>
+            </article>
+
+            <article>
+                <h3>Control</h3>
+                <p>Know how much you spent and how much is left.</p>
+            </article>
+
+            <article>
+                <h3>Understand</h3>
+                <p>Check your spending by category in the reports page.</p>
+            </article>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 SmartSpend</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

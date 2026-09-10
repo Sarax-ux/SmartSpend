@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartSpend - Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-mark">$</span>
+        SmartSpend
+    </div>
+
+    <nav>
+        <a class="" href="index.html">Home</a>
+        <a class="" href="expenses.html">Expenses</a>
+        <a class="active" href="reports.html">Reports</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Spending Reports</h1>
+    <p>See a simple summary of your spending.</p>
+</section>
+
+<main class="container">
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-top"><p>Income</p><span class="card-icon">↑</span></div>
+            <h2 id="reportIncome">0 EGP</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-top"><p>Spent</p><span class="card-icon">−</span></div>
+            <h2 id="reportSpent">0 EGP</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-top"><p>Remaining</p><span class="card-icon">✓</span></div>
+            <h2 id="reportRemaining">0 EGP</h2>
+        </div>
+    </div>
+
+    <section class="report-box">
+        <h2>Spending by Category</h2>
+        <div id="categoryReport"></div>
+    </section>
+
+    <section class="report-box">
+        <h2>Budget Tip</h2>
+        <p id="reportMessage">Add your income and expenses to see your result.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 SmartSpend</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
